@@ -22,10 +22,10 @@ import java.time.OffsetDateTime
  * 实际数据里 HN 条目（占一半）本身就没有图，无图形态才是主要形态。
  */
 
-private fun hoursAgo(h: Long): String =
+internal fun hoursAgo(h: Long): String =
     OffsetDateTime.now().minusHours(h).toString()
 
-private val sampleHn = Article(
+internal val sampleHn = Article(
     id = "p1",
     title = "Don't paste the AI, please",
     summary = "Don't paste the AI, please",   // 与标题相同 → 卡片会自动隐藏摘要
@@ -39,7 +39,7 @@ private val sampleHn = Article(
     tags = listOf("hackernews")
 )
 
-private val sampleTechCrunch = Article(
+internal val sampleTechCrunch = Article(
     id = "p2",
     title = "Apple shares 'shocking evidence' against former employee accused of stealing company data for OpenAI",
     summary = "Apple says it has evidence that a former employee destroyed evidence of data theft after learning he was under investigation.",
@@ -54,7 +54,7 @@ private val sampleTechCrunch = Article(
     tags = listOf("news")
 )
 
-private val sampleVerge = Article(
+internal val sampleVerge = Article(
     id = "p3",
     title = "谷歌发布新一代推理模型，声称在数学基准上超越前代 40%",
     summary = "该模型采用了新的训练策略，在 AIME 与 GPQA 上均有明显提升，但推理成本同步上升。",
@@ -68,7 +68,7 @@ private val sampleVerge = Article(
     tags = listOf("news")
 )
 
-private val sampleWired = Article(
+internal val sampleWired = Article(
     id = "p4",
     title = "You Know Who Really Hates AI? Business",
     summary = "Enterprises are quietly discovering the gap between AI demos and AI deployments.",
