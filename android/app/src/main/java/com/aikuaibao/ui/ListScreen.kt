@@ -339,8 +339,8 @@ private fun ShimmerBar(widthFraction: Float, barHeight: Dp, shimmer: Float) {
     )
 }
 
-/** 按来源给一个识别色，列表里扫一眼就知道是哪家的内容 */
-private fun sourceAccent(sourceName: String): Color = when {
+/** 按来源给一个识别色，列表里扫一眼就知道是哪家的内容（详情页复用） */
+internal fun sourceAccent(sourceName: String): Color = when {
     sourceName.contains("Hacker", ignoreCase = true) -> Color(0xFFFF6600)
     sourceName.contains("TechCrunch", ignoreCase = true) -> Color(0xFF1DA362)
     sourceName.contains("Verge", ignoreCase = true) -> Color(0xFF7B2FF2)
@@ -352,7 +352,7 @@ private fun sourceAccent(sourceName: String): Color = when {
     else -> Color(0xFF3D5AFE)
 }
 
-private fun heatColor(score: Int): Color = when {
+internal fun heatColor(score: Int): Color = when {
     score >= 500 -> Color(0xFFD32F2F)
     score >= 200 -> Color(0xFFF57C00)
     else -> Color(0xFF9E9E9E)
