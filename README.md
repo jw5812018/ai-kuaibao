@@ -33,7 +33,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
 ## 数据源说明
-Reddit 对数据中心 IP 限流（403），目前由 HN + RSS 提供内容；Reddit 需后续接入 OAuth / 住宅代理。
+Reddit 官方 `.json`/`.rss` 对数据中心 IP 限流（403），改为经 [arctic-shift](https://arctic-shift.photon-reddit.com) 公开归档拉取 r/LocalLLaMA、r/singularity、r/MachineLearning（免 key、带真实分数）；另新增 arXiv（cs.AI / cs.LG / cs.CL 近期论文，免 key）。
 
 ## App 特性
 - 列表页下拉刷新（Material3 `PullToRefreshBox`），刷新时保留列表不闪屏；刷新失败仅轻提示，不覆盖内容
@@ -53,12 +53,12 @@ Reddit 对数据中心 IP 限流（403），目前由 HN + RSS 提供内容；Re
 > 注意：Coil 的 `AsyncImage` 在 Preview 中不加载网络图，封面区显示占位灰块，真机正常。
 
 ## 聚合脚本
-- Reddit / Hacker News / RSS（TechCrunch、Verge、Wired、Ars、The Decoder、VentureBeat）
+- Reddit（arctic-shift 归档：r/LocalLLaMA / r/singularity / r/MachineLearning）/ Hacker News / arXiv（cs.AI·cs.LG·cs.CL）/ RSS（TechCrunch、Verge、Wired、Ars、The Decoder、VentureBeat）
 - RSS 封面提取优先级：`<media:content>` / `<media:thumbnail>` → HTML 正文 `<img>` → 文章页 `og:image` 兜底
 - 失败隔离：单个源挂掉不影响整体
 
 ## 已知待办
-- [ ] Reddit OAuth / 住宅代理接入
+- [x] Reddit 经 arctic-shift 归档接入（免 key，绕过数据中心 403）；新增 arXiv AI 论文源
 - [x] 生成 gradle-wrapper.jar 让 `./gradlew` 直接可用
 - [x] App 卡片样式优化 / 下拉刷新动画
 - [x] RSS 封面图提取（含 og:image 兜底）
