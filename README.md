@@ -39,7 +39,18 @@ Reddit 对数据中心 IP 限流（403），目前由 HN + RSS 提供内容；Re
 - 列表页下拉刷新（Material3 `PullToRefreshBox`），刷新时保留列表不闪屏；刷新失败仅轻提示，不覆盖内容
 - 首次加载骨架屏（呼吸式 shimmer），优于居中转圈
 - 卡片文字优先设计：来源色标 + 序号、相对时间（刚刚 / x小时前 / x天前）、🔥 热度按分数变色、HN 条目自动隐藏与标题重复的 summary
-- 详情页 WebView 视频内嵌 / 外链跳转，无图 / 无视频自动降级
+- 详情页与列表页视觉统一：来源色标顶栏、元信息行（时间 / 热度 / 评论 / 作者）、16:9 封面、标签行、阅读原文 + 复制链接 + 系统分享
+- 详情页 WebView 已启用 JavaScript（否则 YouTube 嵌入无法播放），支持 `youtube.com/watch` 与 `youtu.be` 两种链接转 embed
+- 无图 / 无视频 / 无摘要均优雅降级（不留空白块，无摘要时给明确提示）
+
+## 在 Android Studio 里预览（不必启动模拟器）
+项目内置 Compose `@Preview`，适合内存紧张的机器调视觉：
+1. Android Studio → Open → 选择 `android/` 目录，等待 Gradle Sync
+2. 打开 `ui/ListScreenPreview.kt` 或 `ui/DetailScreenPreview.kt`
+3. 点编辑器右上角 `Split` / `Design`，右侧实时渲染
+
+覆盖形态：HN 无图高热度卡、RSS 带摘要卡、四来源色标对比、完整列表页、骨架屏、详情页三态。
+> 注意：Coil 的 `AsyncImage` 在 Preview 中不加载网络图，封面区显示占位灰块，真机正常。
 
 ## 聚合脚本
 - Reddit / Hacker News / RSS（TechCrunch、Verge、Wired、Ars、The Decoder、VentureBeat）
