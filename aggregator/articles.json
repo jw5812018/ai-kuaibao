@@ -1,0 +1,691 @@
+{
+  "generated_at": "2026-09-01T06:47:14.152856+00:00",
+  "count": 40,
+  "sources": {
+    "reddit": 0,
+    "hn": 20,
+    "rss": 20
+  },
+  "articles": [
+    {
+      "id": "3ca1d6eea3dc",
+      "title": "Don't paste the AI, please",
+      "summary": "Don't paste the AI, please",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://dontpastetheai.com/",
+      "image_url": null,
+      "video_url": null,
+      "author": "pjerem",
+      "published_at": "2026-08-20T08:20:44+00:00",
+      "score": 1060,
+      "comments": 581,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "fa7623ee1ba9",
+      "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
+      "summary": "CEO fired developers to make room for AI. Developers create open source AI CEO",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://github.com/SenteLabsAI/OpenExecutive",
+      "image_url": null,
+      "video_url": null,
+      "author": "GrumpySciGuy",
+      "published_at": "2026-08-27T01:46:22+00:00",
+      "score": 1030,
+      "comments": 717,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "75a73f0d5f53",
+      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "summary": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+      "image_url": null,
+      "video_url": null,
+      "author": "naves",
+      "published_at": "2026-08-23T18:16:37+00:00",
+      "score": 819,
+      "comments": 702,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "8a4dfaa98959",
+      "title": "Get your Windows license refund",
+      "summary": "Get your Windows license refund",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://en.refund4freedom.org/",
+      "image_url": null,
+      "video_url": null,
+      "author": "smartmic",
+      "published_at": "2026-08-28T13:42:40+00:00",
+      "score": 735,
+      "comments": 337,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "40c1dc3fcbee",
+      "title": "I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day",
+      "summary": "I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://ericpardee.github.io/fire-hd-ownership/",
+      "image_url": null,
+      "video_url": null,
+      "author": "dr_pardee",
+      "published_at": "2026-08-23T14:23:09+00:00",
+      "score": 703,
+      "comments": 292,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "92d0acf4aa3a",
+      "title": "AI companies destroy physical books – let's scan rare books before it's too late",
+      "summary": "AI companies destroy physical books – let's scan rare books before it's too late",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://annas-archive.gl/blog/physical-destruction.html",
+      "image_url": null,
+      "video_url": null,
+      "author": "Cider9986",
+      "published_at": "2026-08-21T02:37:47+00:00",
+      "score": 648,
+      "comments": 919,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "3ceeb5bddfd6",
+      "title": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
+      "summary": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+      "image_url": null,
+      "video_url": null,
+      "author": "jbegley",
+      "published_at": "2026-08-28T02:03:38+00:00",
+      "score": 644,
+      "comments": 434,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "7d1d995afc75",
+      "title": "Google has acquired the data of failed US airline Spirit",
+      "summary": "Google has acquired the data of failed US airline Spirit",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
+      "image_url": null,
+      "video_url": null,
+      "author": "pseudolus",
+      "published_at": "2026-08-18T10:13:28+00:00",
+      "score": 616,
+      "comments": 422,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "969a834ab815",
+      "title": "I were 17, I'd learn how to build LLMs from scratch",
+      "summary": "I were 17, I'd learn how to build LLMs from scratch",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://twitter.com/paulg/status/2091544343589060625",
+      "image_url": null,
+      "video_url": null,
+      "author": "bilsbie",
+      "published_at": "2026-08-23T20:38:09+00:00",
+      "score": 608,
+      "comments": 681,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "e61f241d4e2e",
+      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+      "summary": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "image_url": null,
+      "video_url": null,
+      "author": "bmulholland",
+      "published_at": "2026-08-25T14:06:02+00:00",
+      "score": 584,
+      "comments": 381,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "42f46d423de7",
+      "title": "Coding expertise is going to collapse from AI reliance",
+      "summary": "Coding expertise is going to collapse from AI reliance",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+      "image_url": null,
+      "video_url": null,
+      "author": "larsfaye",
+      "published_at": "2026-08-24T15:52:33+00:00",
+      "score": 561,
+      "comments": 545,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "3d1a94f342fc",
+      "title": "Luanti removed from Google Play due to baseless AI copyright notice",
+      "summary": "Luanti removed from Google Play due to baseless AI copyright notice",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
+      "image_url": null,
+      "video_url": null,
+      "author": "miniBill",
+      "published_at": "2026-08-28T06:33:57+00:00",
+      "score": 523,
+      "comments": 151,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "1130499a9347",
+      "title": "I'm becoming AI-blind",
+      "summary": "I'm becoming AI-blind",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://cymerys.com/w/im-becoming-ai-blind",
+      "image_url": null,
+      "video_url": null,
+      "author": "rcymerys",
+      "published_at": "2026-08-21T11:48:05+00:00",
+      "score": 522,
+      "comments": 510,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "df33b5c46b3b",
+      "title": "Debian votes to allow \"responsible use of generative AI\"",
+      "summary": "Debian votes to allow \"responsible use of generative AI\"",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://lwn.net/Articles/1091231/",
+      "image_url": null,
+      "video_url": null,
+      "author": "pluc",
+      "published_at": "2026-08-29T14:02:10+00:00",
+      "score": 512,
+      "comments": 477,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "c0f9d10986f5",
+      "title": "Why your local LLM feels dumber than it is",
+      "summary": "Why your local LLM feels dumber than it is",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+      "image_url": null,
+      "video_url": null,
+      "author": "felineflock",
+      "published_at": "2026-08-22T18:14:16+00:00",
+      "score": 509,
+      "comments": 208,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "6472bbcb1287",
+      "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
+      "summary": "Good Culture Is the Biggest Productivity Hack, Not AI",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+      "image_url": null,
+      "video_url": null,
+      "author": "gpi",
+      "published_at": "2026-08-29T17:19:47+00:00",
+      "score": 476,
+      "comments": 120,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "745f8246bc21",
+      "title": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
+      "summary": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
+      "image_url": null,
+      "video_url": null,
+      "author": "garo-pro",
+      "published_at": "2026-08-26T10:04:55+00:00",
+      "score": 434,
+      "comments": 146,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "451496f8489c",
+      "title": "My agent.md to improve LLM-assisted code quality",
+      "summary": "My agent.md to improve LLM-assisted code quality",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://fabiensanglard.net/agent.md/index.html",
+      "image_url": null,
+      "video_url": null,
+      "author": "ibobev",
+      "published_at": "2026-08-23T17:59:52+00:00",
+      "score": 415,
+      "comments": 176,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "24db0009d465",
+      "title": "I built a low-latency AI companion that plays Skyrim with me",
+      "summary": "I built a low-latency AI companion that plays Skyrim with me",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://pantel.is/projects/ai-gaming-companion/",
+      "image_url": null,
+      "video_url": null,
+      "author": "pantelisk",
+      "published_at": "2026-08-23T23:18:17+00:00",
+      "score": 399,
+      "comments": 76,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "19e393a5e185",
+      "title": "Show HN: Huzzah – a novel approach to coding with AI",
+      "summary": "Show HN: Huzzah – a novel approach to coding with AI",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://www.danielvaughn.dev/posts/huzzah/",
+      "image_url": null,
+      "video_url": null,
+      "author": "danielvaughn",
+      "published_at": "2026-08-20T19:05:36+00:00",
+      "score": 384,
+      "comments": 210,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "71ebe41f5e82",
+      "title": "Apple shares ‘shocking evidence’ against former employee accused of stealing company data for OpenAI",
+      "summary": "Apple says it has evidence that a former employee destroyed evidence of data theft after learning he was under investigation.",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Amanda Silberling",
+      "published_at": "2026-09-01T00:13:00+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "bb1d02abd1c3",
+      "title": "The Pentagon now has its own version of ChatGPT and Grok",
+      "summary": "Versions of OpenAI's ChatGPT and SpaceXAI's Grok will join Google's Gemini on the Pentagon's central portal for AI tools.",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Kirsten Korosec",
+      "published_at": "2026-08-31T20:13:45+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "5714bb72d855",
+      "title": "Instagram puts new limits on undisclosed AI profiles",
+      "summary": "As frustration over AI influencers has been growing, Instagram is limiting the reach of undisclosed AI profiles.",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Lauren Forristal",
+      "published_at": "2026-08-31T19:16:59+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "84762d7f4362",
+      "title": "Harvard Law dropout raises $6M for Blue Voice to build a ‘Harvey for police officers’",
+      "summary": "Blue Voice is trained on department-specific laws, local ordinances, protocols, and guidelines that general-purpose AI tools can't access on the public internet.",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/31/harvard-law-dropout-raises-6m-for-blue-voice-to-build-a-harvey-for-police-officers/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Marina Temkin",
+      "published_at": "2026-08-31T18:35:11+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "c8b1a8499ee5",
+      "title": "“Zlibrary my beloved”: Anthropic staff chats extolling piracy cited in Sony suit",
+      "summary": "Lawsuit: Anthropic’s torrenting totally screwed songwriters as AI songs top charts.",
+      "source": "rss",
+      "source_name": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-172575622-1152x648.jpg",
+      "video_url": null,
+      "author": "Ashley Belanger",
+      "published_at": "2026-08-31T18:10:45+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "09c8fe5e8ea1",
+      "title": "Clipto uses AI to search terabytes of video and is now valued at $250M",
+      "summary": "The three-year-old startup says it reached $15 million in ARR and profitability before raising its latest $15 million round.",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Kate Park",
+      "published_at": "2026-08-31T16:00:00+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "3f983827d88c",
+      "title": "Nvidia’s $3.5B MediaTek bet reveals its plan for tackling Big Tech’s AI chip buildout",
+      "summary": "Nvidia invests $3.5 billion into Taiwanese chipmaker MediaTek. The deal shows how Nvidia plans to stay essential to AI infrastructure as Big Tech begins to build its own AI chips.",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Rebecca Bellan",
+      "published_at": "2026-08-31T15:15:25+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "915ffff48c98",
+      "title": "ChatGPT and Reddit now face EU's toughest online safety rules",
+      "summary": "Explosive growth comes with a new regulatory burden in the European Union.",
+      "source": "rss",
+      "source_name": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2022/03/getty-eu-flag-1152x648.jpg",
+      "video_url": null,
+      "author": "Barbara Moens, Financial Times",
+      "published_at": "2026-08-31T13:41:40+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "121993fc43fd",
+      "title": "Meeting note-taker Circleback adds a free tier to attract more customers",
+      "summary": "Circleback is also introducing new pricing plans starting from $14 per month.",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/31/meeting-notetaker-circleback-adds-a-free-tier-to-attract-more-customers/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Ivan Mehta",
+      "published_at": "2026-08-31T12:56:46+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "662ad6a9f4e0",
+      "title": "Debian won&#8217;t ban AI code from its Linux distribution",
+      "summary": "Debian voted to allow developers to use AI tools in their contributions to the Linux distribution's \"development, maintenance, [and] documentation.\" The new policy on AI acknowledges that \"responsible\" use of AI can imp…",
+      "source": "rss",
+      "source_name": "The Verge AI",
+      "url": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+      "image_url": null,
+      "video_url": null,
+      "author": "",
+      "published_at": "2026-08-31T11:34:58-04:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "89d79cabf2a0",
+      "title": "You Know Who Really Hates AI? Insurance Claims Adjusters",
+      "summary": "Of the Glassdoor reviews from claims adjusters that mentioned AI, a staggering 98 percent were negative. “AI is just a tool,” one person tells WIRED. “It should never be given the keys.”",
+      "source": "rss",
+      "source_name": "Wired AI",
+      "url": "https://www.wired.com/story/insurance-claims-adjusters-really-hate-ai/",
+      "image_url": "https://media.wired.com/photos/6a90caf6df5e45f6df862f92/master/pass/You-Know-Who-Really-Hates-AI-Business.jpg",
+      "video_url": null,
+      "author": "Kate Taylor",
+      "published_at": "2026-08-31T10:30:00+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "f0c23ddb6921",
+      "title": "Pocket's AI made my game ideas real. Now Meta controls the results.",
+      "summary": "Interactive mobile \"gizmos\" are easy to make, hard to share outside Meta's platform.",
+      "source": "rss",
+      "source_name": "Ars Technica",
+      "url": "https://arstechnica.com/gaming/2026/08/pockets-ai-made-my-game-ideas-real-now-meta-controls-the-results/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/pocketsling-1152x648-1787932298.png",
+      "video_url": null,
+      "author": "Kyle Orland",
+      "published_at": "2026-08-31T10:00:34+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "2c0ffcd676ea",
+      "title": "New York Governor Kathy Hochul thinks AI should be ‘less evil’",
+      "summary": "Today, I’m talking with New York Governor Kathy Hochul, and I’ll just warn you — this episode moves really fast. It’s an election year, after all, with a shocking amount of tech policy at stake, and Governor Hochul has…",
+      "source": "rss",
+      "source_name": "The Verge AI",
+      "url": "https://www.theverge.com/podcast/986661/ny-gov-kathy-hochul-ai-data-centers-ban-3d-printed-guns-flock-cameras",
+      "image_url": null,
+      "video_url": null,
+      "author": "",
+      "published_at": "2026-08-31T10:00:00-04:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "8b9768eab1b1",
+      "title": "ChatGPT to face tougher regulation in the EU",
+      "summary": "OpenAI will soon be held accountable for mitigating risks related to ChatGPT's impact on minors, user mental health, and the spread of illegal content in the European Union. That's because ChatGPT is now considered a Ve…",
+      "source": "rss",
+      "source_name": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+      "image_url": null,
+      "video_url": null,
+      "author": "",
+      "published_at": "2026-08-31T09:27:36-04:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "8051bcd07a89",
+      "title": "Instagram cracks down on AI accounts pretending to be human",
+      "summary": "Instagram is finally taking steps to address the rise of fake AI-influencer accounts that have gotten harder to spot. It's also renaming the \"AI creator\" label to \"AI-generated profile\" to make it clear when a profile f…",
+      "source": "rss",
+      "source_name": "The Verge AI",
+      "url": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
+      "image_url": null,
+      "video_url": null,
+      "author": "",
+      "published_at": "2026-08-31T09:00:00-04:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "f2a0380f36ec",
+      "title": "The US is building barriers around drones and robots, but China has scale to get around them",
+      "summary": "The U.S. is shutting out more foreign-made drones and robots. China’s scale means the global competition may simply move elsewhere.",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Kate Park",
+      "published_at": "2026-08-31T02:34:00+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "a05533f3a710",
+      "title": "Musk’s faster path to more gas turbines comes with pollution problem",
+      "summary": "Elon Musk says a secretive new SpaceX foundry will let him cast his own turbine blades and get gas power online 18 months faster than anyone else — but it's a bet on a fuel source that's already triggering lawsuits and…",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Connie Loizos",
+      "published_at": "2026-08-30T16:54:25+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "d42720224276",
+      "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+      "summary": "Caterpillar has spent decades putting autonomous machines to work at remote mining sites. It's now bringing that experience to AI deployment.",
+      "source": "rss",
+      "source_name": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Kate Park",
+      "published_at": "2026-08-30T15:00:00+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "4538153b570f",
+      "title": "Texas Governor Abbott blocks funding for more Flock cameras",
+      "summary": "As backlash grows over Flock's AI surveillance cameras, Texas Governor Greg Abbott has frozen state spending on them. The move came just ahead of the publication of a Texas Tribune investigation that revealed the state…",
+      "source": "rss",
+      "source_name": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
+      "image_url": null,
+      "video_url": null,
+      "author": "",
+      "published_at": "2026-08-30T11:35:10-04:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "id": "d73f149604cd",
+      "title": "Why the Hottest New Wearables Want to Be Ignored",
+      "summary": "Burnt out on wrist buzzes and notification overload? A new crop of minimalist wearables promises to collect your health data without demanding your attention.",
+      "source": "rss",
+      "source_name": "Wired AI",
+      "url": "https://www.wired.com/story/why-the-hottest-new-wearables-want-to-be-ignored/",
+      "image_url": "https://media.wired.com/photos/6a8f1c5ba84e455f12fd962b/master/pass/NoScreenWearable.jpg",
+      "video_url": null,
+      "author": "Andrew Williams",
+      "published_at": "2026-08-30T10:30:00+00:00",
+      "score": 0,
+      "comments": null,
+      "tags": [
+        "news"
+      ]
+    }
+  ]
+}
