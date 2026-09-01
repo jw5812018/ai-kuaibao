@@ -252,7 +252,7 @@ def fetch_rss(opener) -> list[dict]:
             if name == "Ars Technica" and not _AI_KW.search(title + " " + summary):
                 continue
             link = _link(it) or _text(it, "id")
-            img = _media_image(it)
+            img = _media_image(it) or _og_image(opener, link)
             video = _media_video(it)
             out.append({
                 "title": title,
@@ -269,6 +269,18 @@ def fetch_rss(opener) -> list[dict]:
                 "tags": ["news"],
             })
     return out
+
+
+_OG_RE = re.compile(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', re.I)
+def _og_image(opener, url: str | None) -> str | None:
+    """兜底：抓取文章页 <meta property='og:image' content='...'> 作为封面。"""
+    if not url or not url.startswith("http"):
+        return None
+    html = http_get(opener, url, retries=0)
+    if not html:
+        return None
+    m = _OG_RE.search(html)
+    return m.group(1) if m else None
 
 
 def _text(parent, tag):
@@ -298,11 +310,19 @@ def _media_image(parent):
             return el.get("url")
         if ln == "content" and el.get("type", "").startswith("image") and el.get("url"):
             return el.get("url")
-    # 兜底：从 description 里抠 <img src>
-    desc = _text(parent, "description") or _text(parent, "summary")
-    m = re.search(r'<img[^>]+src=["\']([^"\']+)', desc or "")
-    if m:
-        return m.group(1)
+    # 兜底：从 HTML 正文（description / summary / content）里抠第一个 <img src>
+    for tag in ("description", "summary", "content"):
+        desc = _text(parent, tag)
+        if not desc:
+            # Atom 的 content 可能是带属性的元素，_text 拿不到，直接扫原始标签
+            for el in parent.iter():
+                if _local(el.tag) == tag and el.text and "<img" in el.text:
+                    desc = el.text
+                    break
+        if desc:
+            m = re.search(r'<img[^>]+src=["\']([^"\']+)', desc)
+            if m:
+                return m.group(1)
     return None
 
 
