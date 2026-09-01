@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-09-01T10:08:49.062605+00:00",
-  "count": 40,
+  "generated_at": "2026-09-01T10:48:34.712894+00:00",
+  "count": 60,
   "sources": {
-    "reddit": 0,
+    "reddit": 20,
     "hn": 20,
-    "rss": 20
+    "rss": 5,
+    "arxiv": 15
   },
   "articles": [
     {
@@ -122,23 +123,6 @@
       "published_at": "2026-08-28T02:03:38+00:00",
       "score": 645,
       "comments": 434,
-      "tags": [
-        "hackernews"
-      ]
-    },
-    {
-      "id": "7d1d995afc75",
-      "title": "Google has acquired the data of failed US airline Spirit",
-      "summary": "Google has acquired the data of failed US airline Spirit",
-      "source": "hn",
-      "source_name": "Hacker News",
-      "url": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
-      "image_url": null,
-      "video_url": null,
-      "author": "pseudolus",
-      "published_at": "2026-08-18T10:13:28+00:00",
-      "score": 616,
-      "comments": 422,
       "tags": [
         "hackernews"
       ]
@@ -307,8 +291,25 @@
       "video_url": null,
       "author": "Tomte",
       "published_at": "2026-08-27T16:45:22+00:00",
+      "score": 422,
+      "comments": 173,
+      "tags": [
+        "hackernews"
+      ]
+    },
+    {
+      "id": "b5efced7f08a",
+      "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+      "summary": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+      "image_url": null,
+      "video_url": null,
+      "author": "thm",
+      "published_at": "2026-08-31T12:41:22+00:00",
       "score": 418,
-      "comments": 171,
+      "comments": 459,
       "tags": [
         "hackernews"
       ]
@@ -331,20 +332,380 @@
       ]
     },
     {
-      "id": "b5efced7f08a",
-      "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
-      "summary": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+      "id": "24db0009d465",
+      "title": "I built a low-latency AI companion that plays Skyrim with me",
+      "summary": "I built a low-latency AI companion that plays Skyrim with me",
       "source": "hn",
       "source_name": "Hacker News",
-      "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+      "url": "https://pantel.is/projects/ai-gaming-companion/",
       "image_url": null,
       "video_url": null,
-      "author": "thm",
-      "published_at": "2026-08-31T12:41:22+00:00",
-      "score": 412,
-      "comments": 457,
+      "author": "pantelisk",
+      "published_at": "2026-08-23T23:18:17+00:00",
+      "score": 399,
+      "comments": 76,
       "tags": [
         "hackernews"
+      ]
+    },
+    {
+      "id": "02619d7aed35",
+      "title": "Cold emailing profs about PhD positions? Read this [D]",
+      "summary": "This is the time of year where the cold emails I receive about PhD positions tends to ramp up quite a bit. In many countries, this cold emailing is essentially part of the normal recruitment process,…",
+      "source": "reddit",
+      "source_name": "Reddit · r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w3bwci/cold_emailing_profs_about_phd_positions_read_this/",
+      "image_url": null,
+      "video_url": null,
+      "author": "tariban",
+      "published_at": "2026-08-31T12:09:24+00:00",
+      "score": 95,
+      "comments": 9,
+      "tags": [
+        "reddit",
+        "machinelearning"
+      ]
+    },
+    {
+      "id": "e82b0c2d0ad9",
+      "title": "AI-generated videos are slowly displacing actors and live-streamers in China's entertainment industry",
+      "summary": "AI-generated videos are slowly displacing actors and live-streamers in China's entertainment industry",
+      "source": "reddit",
+      "source_name": "Reddit · r/singularity",
+      "url": "https://www.reddit.com/r/singularity/comments/1w3eq4n/aigenerated_videos_are_slowly_displacing_actors/",
+      "image_url": null,
+      "video_url": null,
+      "author": "kernelangus420",
+      "published_at": "2026-08-31T14:02:07+00:00",
+      "score": 29,
+      "comments": 13,
+      "tags": [
+        "reddit",
+        "singularity"
+      ]
+    },
+    {
+      "id": "0bbebe62172c",
+      "title": "Good Machine Learning Posters [D]",
+      "summary": "Hi, I'm making posters for ECCV 2026. Does anyone have any ML/CV posters they thought were really well done? Would love to see some cool examples. Thanks",
+      "source": "reddit",
+      "source_name": "Reddit · r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w39buv/good_machine_learning_posters_d/",
+      "image_url": null,
+      "video_url": null,
+      "author": "National-Resident244",
+      "published_at": "2026-08-31T10:04:08+00:00",
+      "score": 7,
+      "comments": 3,
+      "tags": [
+        "reddit",
+        "machinelearning"
+      ]
+    },
+    {
+      "id": "c7ca8ca41004",
+      "title": "How to assess if there is a strong signal in your dirty data [Project]",
+      "summary": "I'm sharing this new tabular data diagnostic tool (Entropic Scree). It can be used to estimate these properties of your high-d, real-world, dirty dataset: * The informational volume of the signal (i.…",
+      "source": "reddit",
+      "source_name": "Reddit · r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w3br9c/how_to_assess_if_there_is_a_strong_signal_in_your/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Chocolate_Milk_Son",
+      "published_at": "2026-08-31T12:02:54+00:00",
+      "score": 6,
+      "comments": 3,
+      "tags": [
+        "reddit",
+        "machinelearning"
+      ]
+    },
+    {
+      "id": "895a67a5e6e7",
+      "title": "Vellium v1.1.0 — Live voice, local STT/TTS and easier llama.cpp setup",
+      "summary": "Vellium is an open-source, local-first desktop app for AI chat, character roleplay and long-form writing. Recent updates have focused mostly on making local voice and model setups easier to use. Live…",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w48azv/vellium_v110_live_voice_local_stttts_and_easier/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Possible_Statement84",
+      "published_at": "2026-09-01T10:45:02+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "localllama"
+      ]
+    },
+    {
+      "id": "628823fcbd0b",
+      "title": "Qwen 3.8 27b (Q4KM) oneshot a Super Mario clone",
+      "summary": "Hardware used: \\- 4070ti (12GB VRAM) \\- Macbook M5 Air (RPC connection, LLAMA.cpp) Software used: \\- LLAMA.cpp (Q4KM, xhigh, 8bit KV, MTP=1) \\- Lmstudio Qwen 3.8 27b (Q4KM) GGUF \\- Deepseek harness (…",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w4821c/qwen_38_27b_q4km_oneshot_a_super_mario_clone/",
+      "image_url": null,
+      "video_url": null,
+      "author": "zannix",
+      "published_at": "2026-09-01T10:31:56+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "localllama"
+      ]
+    },
+    {
+      "id": "e5fb6eb20eb0",
+      "title": "My company has unlimited Claude access, but most regular folks use Sonnet 5 Medium",
+      "summary": "I work at a big company that gives all employees unlimited access and tokens to Claude and ChatGPT. I thought everyone would use Fable on Extra/Max like I do, but apparently most random people who do…",
+      "source": "reddit",
+      "source_name": "Reddit · r/singularity",
+      "url": "https://www.reddit.com/r/singularity/comments/1w480fv/my_company_has_unlimited_claude_access_but_most/",
+      "image_url": null,
+      "video_url": null,
+      "author": "LegitimateLength1916",
+      "published_at": "2026-09-01T10:29:39+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "singularity"
+      ]
+    },
+    {
+      "id": "fd5d235be612",
+      "title": "Which current local models that can run within 128GB generate the best SVG pelicans?",
+      "summary": "I used a famous Simon Willison's *pelican riding a bicycle* prompt on the biggest local LLMs that can run on 128GB Apple Silicon. U used quantizations by Unsloth. Qwen3.8 Flash-Next gives a lot of de…",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w47qfe/which_current_local_models_that_can_run_within/",
+      "image_url": null,
+      "video_url": null,
+      "author": "pmigdal",
+      "published_at": "2026-09-01T10:15:19+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "localllama"
+      ]
+    },
+    {
+      "id": "ef4d34f50416",
+      "title": "Nuclear fusion: new US-China race for limitless power",
+      "summary": "Nuclear fusion: new US-China race for limitless power",
+      "source": "reddit",
+      "source_name": "Reddit · r/singularity",
+      "url": "https://www.reddit.com/r/singularity/comments/1w47owo/nuclear_fusion_new_uschina_race_for_limitless/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Anen-o-me",
+      "published_at": "2026-09-01T10:13:08+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "singularity"
+      ]
+    },
+    {
+      "id": "39b510738d15",
+      "title": "New Gemma models on arena ai",
+      "summary": "https://preview.redd.it/via5e88evvmh1.png?width=566&format=png&auto=webp&s=669459ca93ff292f4e1574d098e3e2a0b2c12de4 Gemma 5 or something else?",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w47nif/new_gemma_models_on_arena_ai/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Hot_Example_4456",
+      "published_at": "2026-09-01T10:11:06+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "localllama"
+      ]
+    },
+    {
+      "id": "5cfd361717b7",
+      "title": "Top-Tier MS Steppingstone vs. Mid/Low-Tier PhD? [D]",
+      "summary": "[removed]",
+      "source": "reddit",
+      "source_name": "Reddit · r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w46h3g/toptier_ms_steppingstone_vs_midlowtier_phd_d/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Fit_Caterpillar4434",
+      "published_at": "2026-09-01T09:06:30+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "machinelearning"
+      ]
+    },
+    {
+      "id": "b1041bba88c5",
+      "title": "Why we never really know if our LLM integration actually helped[D]",
+      "summary": "[removed]",
+      "source": "reddit",
+      "source_name": "Reddit · r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w46aye/why_we_never_really_know_if_our_llm_integration/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Imaginary-Tackle1083",
+      "published_at": "2026-09-01T08:57:10+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "machinelearning"
+      ]
+    },
+    {
+      "id": "0bbe3ce10031",
+      "title": "QLoRA on one 32GB card: what actually killed my 8-hour runs (not OOM)",
+      "summary": "[removed]",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w46ans/qlora_on_one_32gb_card_what_actually_killed_my/",
+      "image_url": null,
+      "video_url": null,
+      "author": "Status_Record_1839",
+      "published_at": "2026-09-01T08:56:41+00:00",
+      "score": 1,
+      "comments": 1,
+      "tags": [
+        "reddit",
+        "localllama"
+      ]
+    },
+    {
+      "id": "6a9c24ad1441",
+      "title": "Llama cpp metal moe optimization",
+      "summary": "I made a llama.cpp Metal optimization that gives a nice decode speedup for IQ3\\_XXS models on Apple Silicon: https://github.com/ggml-org/llama.cpp/pull/28086 Basically on On my test workload I saw de…",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w46a73/llama_cpp_metal_moe_optimization/",
+      "image_url": null,
+      "video_url": null,
+      "author": "predatar",
+      "published_at": "2026-09-01T08:55:57+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "localllama"
+      ]
+    },
+    {
+      "id": "63fd665b3710",
+      "title": "Neural networks are classical stateful dynamical systems - I arrived at this experimentally[R]",
+      "summary": "[removed]",
+      "source": "reddit",
+      "source_name": "Reddit · r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w467hg/neural_networks_are_classical_stateful_dynamical/",
+      "image_url": null,
+      "video_url": null,
+      "author": "fleepclrusty",
+      "published_at": "2026-09-01T08:51:31+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "machinelearning"
+      ]
+    },
+    {
+      "id": "0e6822e5e0ee",
+      "title": "why does OpenAi buy Mac mini?",
+      "summary": "i just don’t see the use case for them",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w45toz/why_does_openai_buy_mac_mini/",
+      "image_url": null,
+      "video_url": null,
+      "author": "FormalAd7367",
+      "published_at": "2026-09-01T08:29:04+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "localllama"
+      ]
+    },
+    {
+      "id": "1f4ce61c4f39",
+      "title": "qwen4exp fixes in llama.cpp",
+      "summary": "if you are on Qwen Flash Next make sure to update your build often merged already (by [ServeurpersoCom](https://github.com/ServeurpersoCom)) [https://github.com/ggml-org/llama.cpp/pull/27978](https:/…",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w45t3d/qwen4exp_fixes_in_llamacpp/",
+      "image_url": null,
+      "video_url": null,
+      "author": "jacek2023",
+      "published_at": "2026-09-01T08:28:09+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "localllama"
+      ]
+    },
+    {
+      "id": "b6c7c81ebb82",
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "summary": "Vision now!",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w45q6m/deepseekaideepseekv4flashvisionexp_hugging_face/",
+      "image_url": null,
+      "video_url": null,
+      "author": "decentralize999",
+      "published_at": "2026-09-01T08:23:31+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "localllama"
+      ]
+    },
+    {
+      "id": "0d429c9d86fb",
+      "title": "Are HMMs still used for unsupervised tasks? [D]",
+      "summary": "I'm exploring HMMs as a baseline method for \"dataset exploration/discovery\" where I have a bunch of unstructured data with no annotations, and wish to gain insights about the structure and semantics…",
+      "source": "reddit",
+      "source_name": "Reddit · r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w45lej/are_hmms_still_used_for_unsupervised_tasks_d/",
+      "image_url": null,
+      "video_url": null,
+      "author": "fullgoopy_alchemist",
+      "published_at": "2026-09-01T08:15:57+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "machinelearning"
+      ]
+    },
+    {
+      "id": "6cc7dce19311",
+      "title": "Q: Why can't models be upcycled and blended?",
+      "summary": "Found this a few months back for more compute-efficient (relative to memory size) MoE models. Nowadays Qwen3.6-35B-A3B exists along with Qwen3.8-27B but MoE SLMs might not get another around. Maybe M…",
+      "source": "reddit",
+      "source_name": "Reddit · r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w45jab/q_why_cant_models_be_upcycled_and_blended/",
+      "image_url": null,
+      "video_url": null,
+      "author": "TomLucidor",
+      "published_at": "2026-09-01T08:12:29+00:00",
+      "score": 1,
+      "comments": 0,
+      "tags": [
+        "reddit",
+        "localllama"
       ]
     },
     {
@@ -433,258 +794,273 @@
       ]
     },
     {
-      "id": "09c8fe5e8ea1",
-      "title": "Clipto uses AI to search terabytes of video and is now valued at $250M",
-      "summary": "The three-year-old startup says it reached $15 million in ARR and profitability before raising its latest $15 million round.",
-      "source": "rss",
-      "source_name": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/ai-agents-GettyImages-2229880232.jpg?resize=1200,675",
+      "id": "3537d789cb46",
+      "title": "Context-Aware Interleaved Batching for WhisperX",
+      "summary": "While WhisperX accelerates speech transcription via intra-audio batching, it isolates audio segments, losing the historical context needed for coherent punctuation and terminology transcription. Conversely, standard Whi…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31170v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Kate Park",
-      "published_at": "2026-08-31T16:00:00+00:00",
+      "author": "Carlos Bain",
+      "published_at": "2026-08-31T17:59:46+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "3f983827d88c",
-      "title": "Nvidia’s $3.5B MediaTek bet reveals its plan for tackling Big Tech’s AI chip buildout",
-      "summary": "Nvidia invests $3.5 billion into Taiwanese chipmaker MediaTek. The deal shows how Nvidia plans to stay essential to AI infrastructure as Big Tech begins to build its own AI chips.",
-      "source": "rss",
-      "source_name": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205761844.jpg?resize=1200,846",
+      "id": "3dfaf4e8eb73",
+      "title": "Constant Individual Regret in General Games",
+      "summary": "Uncoupled no-regret dynamics provide a decentralized route to equilibrium, but prior guarantees for individual regret retain a polylogarithmic dependence on the horizon. We remove this dependence for every finite $N$-pl…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31166v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Rebecca Bellan",
-      "published_at": "2026-08-31T15:15:25+00:00",
+      "author": "Mingyang Liu",
+      "published_at": "2026-08-31T17:59:16+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "915ffff48c98",
-      "title": "ChatGPT and Reddit now face EU's toughest online safety rules",
-      "summary": "Explosive growth comes with a new regulatory burden in the European Union.",
-      "source": "rss",
-      "source_name": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2022/03/getty-eu-flag-1152x648.jpg",
+      "id": "24b43cbd45a4",
+      "title": "SUN: Persistent Programs For Language-Grounded Control-to-Learning-to-Real Policies",
+      "summary": "Bridging model-based control and learned policies in long-horizon manipulation has harbored a silent disagreement: control executes specified objectives, learning amortizes that behavior into a reactive policy, yet exis…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31167v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Barbara Moens, Financial Times",
-      "published_at": "2026-08-31T13:41:40+00:00",
+      "author": "Weiqi Wang",
+      "published_at": "2026-08-31T17:59:16+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "121993fc43fd",
-      "title": "Meeting note-taker Circleback adds a free tier to attract more customers",
-      "summary": "Circleback is also introducing new pricing plans starting from $14 per month.",
-      "source": "rss",
-      "source_name": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/08/31/meeting-notetaker-circleback-adds-a-free-tier-to-attract-more-customers/",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/Screenshot-2026-08-31-at-11.18.37-AM.jpeg?resize=1200,735",
+      "id": "46658eb021c4",
+      "title": "Sharp Approximation Rates for Neural Networks with Affine Latent Parameterizations",
+      "summary": "Many parameter-efficient methods generate the parameters of a large neural network from a low-dimensional latent representation. Given an architecture $Φ$ with $P_Φ$ parameter slots, we write $\\boldsymbolθ_f=\\mathcal{G}…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31157v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Ivan Mehta",
-      "published_at": "2026-08-31T12:56:46+00:00",
+      "author": "Shijun Zhang",
+      "published_at": "2026-08-31T17:55:51+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "662ad6a9f4e0",
-      "title": "Debian won&#8217;t ban AI code from its Linux distribution",
-      "summary": "Debian voted to allow developers to use AI tools in their contributions to the Linux distribution's \"development, maintenance, [and] documentation.\" The new policy on AI acknowledges that \"responsible\" use of AI can imp…",
-      "source": "rss",
-      "source_name": "The Verge AI",
-      "url": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK414_AI_CVIRGINIA_I__0009_7.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "id": "8f0230b59a68",
+      "title": "Auditing Anonymous AI Models: A Four-Stage Protocol for Black-Box Identity Verification",
+      "summary": "The 2025--2026 AI market has seen a wave of stealth releases: frontier models launched anonymously on developer platforms under codenames. For their users, identity determines data-handling terms, supply-chain risk, and…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31142v1",
+      "image_url": null,
       "video_url": null,
-      "author": "",
-      "published_at": "2026-08-31T11:34:58-04:00",
+      "author": "Yisen Xi",
+      "published_at": "2026-08-31T17:48:24+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "89d79cabf2a0",
-      "title": "You Know Who Really Hates AI? Insurance Claims Adjusters",
-      "summary": "Of the Glassdoor reviews from claims adjusters that mentioned AI, a staggering 98 percent were negative. “AI is just a tool,” one person tells WIRED. “It should never be given the keys.”",
-      "source": "rss",
-      "source_name": "Wired AI",
-      "url": "https://www.wired.com/story/insurance-claims-adjusters-really-hate-ai/",
-      "image_url": "https://media.wired.com/photos/6a90caf6df5e45f6df862f92/master/pass/You-Know-Who-Really-Hates-AI-Business.jpg",
+      "id": "61a8a49fb426",
+      "title": "Configurable Semantic Chunking for Biomedical Information Extraction in Retrieval-Augmented Generation",
+      "summary": "BioMedRAG introduced retrieval-augmented generation with a learned chunk scorer for biomedical information extraction. However, it relies on fixed-size chunking which can fragment semantic evidence. We propose a configu…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31139v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Kate Taylor",
-      "published_at": "2026-08-31T10:30:00+00:00",
+      "author": "Riya Ahuja",
+      "published_at": "2026-08-31T17:44:54+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "f0c23ddb6921",
-      "title": "Pocket's AI made my game ideas real. Now Meta controls the results.",
-      "summary": "Interactive mobile \"gizmos\" are easy to make, hard to share outside Meta's platform.",
-      "source": "rss",
-      "source_name": "Ars Technica",
-      "url": "https://arstechnica.com/gaming/2026/08/pockets-ai-made-my-game-ideas-real-now-meta-controls-the-results/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/pocketsling-1152x648-1787932298.png",
+      "id": "2e1c082ae2b2",
+      "title": "OntoAligner-Ensemble: Voting-Based Fusion across Heterogeneous Ontology Alignment Techniques",
+      "summary": "Ontology alignment (OA) has evolved through several methodological paradigms, ranging from lexical and structural aligners to knowledge graph embedding (KGE) models and, more recently, Large Language Model (LLM)-based a…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31137v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Kyle Orland",
-      "published_at": "2026-08-31T10:00:34+00:00",
+      "author": "Hamed Babaei Giglou",
+      "published_at": "2026-08-31T17:44:25+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "2c0ffcd676ea",
-      "title": "New York Governor Kathy Hochul thinks AI should be ‘less evil’",
-      "summary": "Today, I’m talking with New York Governor Kathy Hochul, and I’ll just warn you — this episode moves really fast. It’s an election year, after all, with a shocking amount of tech policy at stake, and Governor Hochul has…",
-      "source": "rss",
-      "source_name": "The Verge AI",
-      "url": "https://www.theverge.com/podcast/986661/ny-gov-kathy-hochul-ai-data-centers-ban-3d-printed-guns-flock-cameras",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/DCD_Hochul.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "id": "c6ebd3370276",
+      "title": "Implementing neural network mixed-effects models in Template Model Builder (TMB)",
+      "summary": "Neural network mixed-effects models (NMMs) have gained traction by combining the strong representation and predictive power of artificial neural networks with the capacity of mixed-effects modeling to capture complex co…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31133v1",
+      "image_url": null,
       "video_url": null,
-      "author": "",
-      "published_at": "2026-08-31T10:00:00-04:00",
+      "author": "Nan Zheng",
+      "published_at": "2026-08-31T17:43:02+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "8b9768eab1b1",
-      "title": "ChatGPT to face tougher regulation in the EU",
-      "summary": "OpenAI will soon be held accountable for mitigating risks related to ChatGPT's impact on minors, user mental health, and the spread of illegal content in the European Union. That's because ChatGPT is now considered a Ve…",
-      "source": "rss",
-      "source_name": "The Verge AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK155_OPEN_AI_4_CVirginia_B.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "id": "14312044d8b6",
+      "title": "DIASENTINEL: An Auditable Multi-Agent System for Guideline-Grounded Diabetes Risk Screening",
+      "summary": "Large language models (LLMs) offer promising clinical decision support but remain vulnerable to hallucinated facts, unsupported recommendations, and citation errors. We present DIASENTINEL, a fully on-premise multi-agen…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31128v1",
+      "image_url": null,
       "video_url": null,
-      "author": "",
-      "published_at": "2026-08-31T09:27:36-04:00",
+      "author": "Yung Wei Shueh",
+      "published_at": "2026-08-31T17:40:43+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "8051bcd07a89",
-      "title": "Instagram cracks down on AI accounts pretending to be human",
-      "summary": "Instagram is finally taking steps to address the rise of fake AI-influencer accounts that have gotten harder to spot. It's also renaming the \"AI creator\" label to \"AI-generated profile\" to make it clear when a profile f…",
-      "source": "rss",
-      "source_name": "The Verge AI",
-      "url": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/vege-ai-influencer.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "id": "555776323668",
+      "title": "On the Complexity of the Compatibility Problem for Succinctly Encoded Conditional Distributions",
+      "summary": "The motivation for this paper is the investigation of the trade-offs implicit in probabilistic models used in machine learning. Models are often used to make predictions in the form of conditional probabilities. However…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31120v1",
+      "image_url": null,
       "video_url": null,
-      "author": "",
-      "published_at": "2026-08-31T09:00:00-04:00",
+      "author": "Guy Emerson",
+      "published_at": "2026-08-31T17:32:21+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "f2a0380f36ec",
-      "title": "The US is building barriers around drones and robots, but China has scale to get around them",
-      "summary": "The U.S. is shutting out more foreign-made drones and robots. China’s scale means the global competition may simply move elsewhere.",
-      "source": "rss",
-      "source_name": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2018/03/gettyimages-507054668.jpg?resize=1200,801",
+      "id": "c54589de6d50",
+      "title": "PaperGym: Rubric-Centered Evolution for Research-Plan Generation",
+      "summary": "Research planning is the decisive capability of AI scientists. Yet a research plan admits no verifiable answer, so reinforcement learning lacks the environment it requires: tasks paired with a critic. Rubrics extracted…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31119v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Kate Park",
-      "published_at": "2026-08-31T02:34:00+00:00",
+      "author": "Yuhan Wang",
+      "published_at": "2026-08-31T17:31:18+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "a05533f3a710",
-      "title": "Musk’s faster path to more gas turbines comes with pollution problem",
-      "summary": "Elon Musk says a secretive new SpaceX foundry will let him cast his own turbine blades and get gas power online 18 months faster than anyone else — but it's a bet on a fuel source that's already triggering lawsuits and…",
-      "source": "rss",
-      "source_name": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/Elon-Musk.jpg?w=1024",
+      "id": "aae34ef26d98",
+      "title": "When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning",
+      "summary": "The effect of Large Language Model (LLM) scale on ontology learning (OL) performance remains insufficiently characterized. We present a controlled evaluation of 13 models spanning dense and Mixture-of-Experts variants f…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31118v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Connie Loizos",
-      "published_at": "2026-08-30T16:54:25+00:00",
+      "author": "Hamed Babaei Giglou",
+      "published_at": "2026-08-31T17:30:05+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "d42720224276",
-      "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
-      "summary": "Caterpillar has spent decades putting autonomous machines to work at remote mining sites. It's now bringing that experience to AI deployment.",
-      "source": "rss",
-      "source_name": "TechCrunch AI",
-      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2023/01/caterpillar-lidar-booth.jpg?resize=1200,800",
+      "id": "327430b3cb38",
+      "title": "\"Train classical, deploy quantum\" requires rethinking generalization",
+      "summary": "Generative models have become central across science and industry, from image and text synthesis to the design of molecules and materials. Quantum generative models are considered one of the most promising applications…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31117v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Kate Park",
-      "published_at": "2026-08-30T15:00:00+00:00",
+      "author": "Snehal Raj",
+      "published_at": "2026-08-31T17:26:27+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "4538153b570f",
-      "title": "Texas Governor Abbott blocks funding for more Flock cameras",
-      "summary": "As backlash grows over Flock's AI surveillance cameras, Texas Governor Greg Abbott has frozen state spending on them. The move came just ahead of the publication of a Texas Tribune investigation that revealed the state…",
-      "source": "rss",
-      "source_name": "The Verge AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2291175333.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "id": "fbd3cac1d990",
+      "title": "Aspire: Can Models Self-Evolve from Vague Goals?",
+      "summary": "Many important forms of human learning begin with a vague goal, such as \"become a better physicist\" or \"improve at research.\" Learners must interpret the goal, identify capability gaps, decide how to learn, and determin…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31111v1",
+      "image_url": null,
       "video_url": null,
-      "author": "",
-      "published_at": "2026-08-30T11:35:10-04:00",
+      "author": "Yuhao Wu",
+      "published_at": "2026-08-31T17:14:59+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     },
     {
-      "id": "d73f149604cd",
-      "title": "Why the Hottest New Wearables Want to Be Ignored",
-      "summary": "Burnt out on wrist buzzes and notification overload? A new crop of minimalist wearables promises to collect your health data without demanding your attention.",
-      "source": "rss",
-      "source_name": "Wired AI",
-      "url": "https://www.wired.com/story/why-the-hottest-new-wearables-want-to-be-ignored/",
-      "image_url": "https://media.wired.com/photos/6a8f1c5ba84e455f12fd962b/master/pass/NoScreenWearable.jpg",
+      "id": "85d518974164",
+      "title": "Stress-Testing Efficient Responsible-AI Evaluation: When Compute Savings Change Benchmark Conclusions",
+      "summary": "Efficient evaluation changes the protocol used to support claims about model behavior, yet it is rarely tested whether those claims remain stable after the evaluation itself is made cheaper. We stress-test conclusion ro…",
+      "source": "arxiv",
+      "source_name": "arXiv",
+      "url": "http://arxiv.org/abs/2608.31108v1",
+      "image_url": null,
       "video_url": null,
-      "author": "Andrew Williams",
-      "published_at": "2026-08-30T10:30:00+00:00",
+      "author": "Ahmed El Kady",
+      "published_at": "2026-08-31T17:13:15+00:00",
       "score": 0,
       "comments": null,
       "tags": [
-        "news"
+        "arxiv",
+        "paper"
       ]
     }
   ]
