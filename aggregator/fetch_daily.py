@@ -4,10 +4,12 @@ AI快报 · 每日聚合脚本 (fetch_daily.py)
 =====================================
 从可公开访问的源拉取 AI 高热度内容，去重后产出 articles.json。
 
-数据源（第一版，均有免费公开接口）：
-  - Reddit   : r/artificialintelligence, r/singularity, r/LocalLLaMA, r/MachineLearning
+数据源（均有免费公开接口，纯标准库可跑）：
+  - Reddit   : 经 arctic-shift 公开归档拉取 r/LocalLLaMA, r/singularity, r/MachineLearning
+               （Reddit 官方 .json/.rss 从数据中心 IP 返回 403，arctic-shift 可绕过）
   - HackerNews: Algolia Search API
   - RSS      : VentureBeat AI / TechCrunch AI / The Verge AI / The Decoder / Wired AI
+  - arXiv    : cs.AI / cs.LG / cs.CL 近期论文（export.arxiv.org API，免 key）
 
 设计要点：
   - 纯标准库，无第三方依赖（GitHub Actions 自带 Python 可直接跑）
@@ -130,47 +132,50 @@ def jaccard(a: set, b: set) -> float:
 # ----------------------------------------------------------------------------
 
 def fetch_reddit(opener) -> list[dict]:
-    subs = ["artificialintelligence", "singularity", "LocalLLaMA", "MachineLearning"]
+    """通过 arctic-shift 公开归档获取 Reddit 数据（免 key，且不被数据中心出口封锁）。
+
+    Reddit 官方 .json / .rss 从数据中心 IP 返回 403，故改用 arctic-shift
+    (photon-reddit.com) 的公开归档：/api/posts/search?subreddit=X&limit=N
+    返回近期帖子（recency-only），含真实 score / num_comments / permalink。
+    注意：该接口不带 offset；title 参数须搭配 subreddit/author 使用。
+    """
+    subs = ["LocalLLaMA", "singularity", "MachineLearning"]
     out = []
     for sub in subs:
-        url = f"https://old.reddit.com/r/{sub}/hot.json?limit={MAX_PER_SOURCE}&raw_json=1"
+        # 单次请求上限，避免对归档服务造成压力
+        url = f"https://arctic-shift.photon-reddit.com/api/posts/search?subreddit={sub}&limit=30"
         data = http_get(opener, url, as_json=True)
-        if not data or "data" not in data:
+        rows = (data or {}).get("data") if isinstance(data, dict) else None
+        if not rows:
             continue
-        for c in data["data"]["children"]:
-            d = c.get("data", {})
-            title = d.get("title", "").strip()
+        for d in rows:
+            if not isinstance(d, dict):
+                continue
+            title = (d.get("title") or "").strip()
             if not title:
                 continue
-            # 图片
-            img = d.get("thumbnail")
-            if not (img and img.startswith("http")):
-                img = None
-            prev = d.get("preview", {}).get("images", [])
-            if prev and not img:
-                src = prev[0].get("source", {}).get("url")
-                if src:
-                    img = src.replace("&amp;", "&")
-            # 视频
-            video = None
-            media = d.get("media", {})
-            if d.get("is_video") and media.get("reddit_video"):
-                video = media["reddit_video"].get("fallback_url")
-            permalink = d.get("permalink", "")
+            permalink = d.get("permalink") or ""
+            link = ("https://www.reddit.com" + permalink) if permalink.startswith("/") else (permalink or "")
+            # 摘要：selftext 前 200 字，或回退到标题
+            selftext = strip_html(d.get("selftext", ""))
+            summary = truncate(selftext, 200) or title
+            author = d.get("author") or "[deleted]"
+            # arctic-shift 不提供媒体字段，图片留 None（Reddit 外链图少，App 有无图降级）
             out.append({
                 "title": title,
-                "summary": truncate(strip_html(d.get("selftext", "")), 200) or title,
+                "summary": summary,
                 "source": "reddit",
-                "source_name": f"r/{sub}",
-                "url": "https://www.reddit.com" + permalink if permalink else "",
-                "image_url": img,
-                "video_url": video,
-                "author": d.get("author"),
+                "source_name": f"Reddit · r/{sub}",
+                "url": link,
+                "image_url": None,
+                "video_url": None,
+                "author": author,
                 "published_at": _ts(d.get("created_utc")),
                 "score": int(d.get("score") or 0),
                 "comments": int(d.get("num_comments") or 0),
-                "tags": ["reddit"],
+                "tags": ["reddit", sub.lower()],
             })
+        time.sleep(1.0)  # 限速，避免 arctic-shift 返回 422 "slow down"
     return out
 
 
@@ -359,6 +364,73 @@ def _parse_date(s: str | None) -> str | None:
 
 
 # ----------------------------------------------------------------------------
+# arXiv 源（近期 AI 论文，免 key）
+# ----------------------------------------------------------------------------
+
+def fetch_arxiv(opener) -> list[dict]:
+    """arXiv 近期 AI 论文（免 key，Atom 格式）。
+
+    拉取 cs.AI / cs.LG / cs.CL 分类下按提交时间倒序的论文，取近窗口内条目。
+    arXiv 无热度信号，score 置 0，排序靠时间兜底。
+    """
+    q = urllib.parse.quote("cat:cs.AI OR cat:cs.LG OR cat:cs.CL")
+    url = (f"https://export.arxiv.org/api/query?search_query={q}"
+           f"&sortBy=submittedDate&sortOrder=descending&start=0&max_results=40")
+    xml = http_get(opener, url)
+    if not xml:
+        return []
+    try:
+        root = ET.fromstring(xml)
+    except ET.ParseError:
+        print("  [warn] arXiv 解析失败", file=sys.stderr)
+        return []
+    cutoff = datetime.now(timezone.utc) - timedelta(days=14)
+    out = []
+    for el in root.iter():
+        if _local(el.tag) != "entry":
+            continue
+        title = " ".join((_text(el, "title") or "").split())
+        if not title:
+            continue
+        summary = truncate(" ".join((_text(el, "summary") or "").split()), 220)
+        published = _parse_date(_text(el, "published"))
+        if not published:
+            continue
+        # 近窗口过滤（arxiv 的 published 即投稿日期）
+        try:
+            pdt = datetime.fromisoformat(published.replace("Z", "+00:00"))
+            if pdt < cutoff:
+                continue
+        except Exception:  # noqa: BLE001
+            pass
+        # 作者（取第一位）
+        author = ""
+        for a in el.iter():
+            if _local(a.tag) == "author":
+                nm = _text(a, "name")
+                if nm:
+                    author = nm
+                    break
+        aid = _text(el, "id")  # 形如 http://arxiv.org/abs/XXXX
+        link = aid or _link(el)
+        out.append({
+            "title": title,
+            "summary": summary or title,
+            "source": "arxiv",
+            "source_name": "arXiv",
+            "url": link,
+            "image_url": None,
+            "video_url": None,
+            "author": author,
+            "published_at": published,
+            "score": 0,
+            "comments": None,
+            "tags": ["arxiv", "paper"],
+        })
+    return out
+
+
+# ----------------------------------------------------------------------------
 # 去重 + 排序
 # ----------------------------------------------------------------------------
 
@@ -453,6 +525,8 @@ def main():
     print(f"  HN 拉到 {len(collected)} 条(累计)")
     collected += fetch_rss(opener)
     print(f"  RSS 拉到 {len(collected)} 条(累计)")
+    collected += fetch_arxiv(opener)
+    print(f"  arXiv 拉到 {len(collected)} 条(累计)")
 
     deduped = dedupe(collected)
     print(f"[info] 去重后 {len(deduped)} 条")
@@ -464,7 +538,8 @@ def main():
         "count": len(final),
         "sources": {"reddit": sum(1 for x in final if x["source"] == "reddit"),
                     "hn": sum(1 for x in final if x["source"] == "hn"),
-                    "rss": sum(1 for x in final if x["source"] == "rss")},
+                    "rss": sum(1 for x in final if x["source"] == "rss"),
+                    "arxiv": sum(1 for x in final if x["source"] == "arxiv")},
         "articles": final,
     }
 
