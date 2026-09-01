@@ -21,18 +21,20 @@ python3 fetch_daily.py
 ```
 
 ## 本地联调 App
-1. 在聚合目录起服务：`cd aggregator && python3 -m http.server 8000`
-2. 把 `app/src/main/java/com/aikuaibao/network/ApiService.kt` 的 `BASE_URL` 改回 `http://10.0.2.2:8000/`
-3. 用本机 Gradle 8.14.5 构建并安装到模拟器：
-   ```bash
-   cd android && /path/to/gradle-8.14.5/bin/gradle :app:assembleDebug
-   adb install -r app/build/outputs/apk/debug/app-debug.apk
-   ```
+App 默认从云端拉取：`https://raw.githubusercontent.com/jw5812018/ai-kuaibao/main/aggregator/articles.json`。
+如需本机调试（模拟器直连宿主机），把 `app/src/main/java/com/aikuaibao/network/ApiService.kt` 的 `BASE_URL` 临时改回 `http://10.0.2.2:8000/`，并在聚合目录起服务：`cd aggregator && python3 -m http.server 8000`。
+
+构建并安装到模拟器（仓库已带 gradle wrapper）：
+```bash
+cd android
+./gradlew :app:assembleDebug
+adb install -r app/build/outputs/apk/debug/app-debug.apk
+```
 
 ## 数据源说明
 Reddit 对数据中心 IP 限流（403），目前由 HN + RSS 提供内容；Reddit 需后续接入 OAuth / 住宅代理。
 
 ## 已知待办
 - [ ] Reddit OAuth / 住宅代理接入
-- [ ] 生成 gradle-wrapper.jar 让 `./gradlew` 直接可用
+- [x] 生成 gradle-wrapper.jar 让 `./gradlew` 直接可用
 - [ ] App 卡片样式优化 / 下拉刷新动画
